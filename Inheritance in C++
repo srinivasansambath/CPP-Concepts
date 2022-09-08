@@ -1,0 +1,45 @@
+// Inheritance in CPP
+#include <iostream>
+
+using namespace std;
+class Abc
+{
+    int a,b;
+    public :
+    void getData()
+    {
+     cout<<"Enter a,b";
+     cin>>a>>b;
+    }
+    void putData()
+    {
+        cout<<a<<b;
+    }
+};
+
+class Xyz
+{
+    int x,y;
+    public :
+    void scanData()
+    {
+     cout<<"Enter x,y";
+     cin>>x>>y;
+    }
+    void printData()
+    {
+        cout<<x<<y;
+    }
+};
+
+int main()
+{
+    Abc p;
+    Xyz q;
+    p.getData();
+    p.putData();
+    q.scanData();
+    q.printData();
+    return 0;
+}
+// In the above program if you want to access Abc methods and class xyz methods, we need to create two objects that is p and q
