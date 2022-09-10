@@ -46,3 +46,88 @@ OUTPUT:
 The output of this program is also compilation error because, 
 1) Even though the class variables and methods are declared in the public scope,
 we cannot access it directly without creating an object for the class in main function.
+
+//class program
+#include <iostream>
+
+using namespace std;
+class  A 
+{
+    public:
+    int x;
+    void getData()
+    {
+        cout<<"This is class"<<x;
+    }
+};
+
+int main()
+{
+    A p;
+    p.x=10;
+    p.getData();
+    return 0;
+}
+//
+OUTPUT:
+This is class10
+// By creating an object for A, we can access the public members in the class inside main() function.
+
+//Printing a variable of public scope in class
+#include <iostream>
+
+using namespace std;
+class  A 
+{
+    public:
+    int x;
+    void getData()
+    {
+        cout<<"This is class";
+    }
+};
+
+int main()
+{
+    A p;
+    p.x=10;
+    cout<<p.x;
+    cout<<"\n";
+    p.getData();
+    return 0;
+}
+OUTPUT:
+10
+This is class
+/* For printing the value of public scope x in main function we need to access in the form of cout<<p.x
+And the variable can only be accessed in main if it is in private scope of the class.*/
+
+#include <iostream>
+
+using namespace std;
+class  A 
+{
+    private:
+    int x;
+    public:
+    void getData()
+    {
+        cout<<"This is class";
+    }
+};
+
+int main()
+{
+    A p;
+    p.x=10;
+    cout<<"\n";
+    cout<<p.x;
+    p.getData();
+    return 0;
+}
+OUTPUT:
+Compilation Error
+/*In the above pgm we are trying to access x in main() which is in private scope.
+But we cannot access because x is private.
+private variables can only be acccessed by the public member functions and member variables.*/
+
