@@ -1,0 +1,23 @@
+//What is a class?
+#include <iostream>
+
+using namespace std;
+class  A 
+{
+    int x;
+    void getData()
+    {
+        cout<<"This is class";
+    }
+};
+
+int main()
+{
+    x=10;
+    getData();
+    return 0;
+}
+OUTPUT:
+The output of the above program is Compilation error because
+1) In CPP class, by default the access specifier is private.
+2) We cannot access the private members and private methods directly in main.
