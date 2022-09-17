@@ -1,0 +1,31 @@
+//In C language 
+#include <stdio.h>
+int x=20;
+int main()
+{
+    printf("The global val of variable is %d",x);
+    return 0;
+}
+OUTPUT:
+The global val of variable is 20
+// To access global variable in main no special procedures are required.
+
+// In C program when local and global var names are similar
+#include <stdio.h>
+int x=20;
+int test();
+int main()
+{
+    int x = 10;
+    x = test();
+    printf("The value of global variable is %d",x);
+    return 0;
+}
+int test()
+{
+    return x;
+}
+OUTPUT:
+The value of global variable is 20
+//Function needed to be used to access the global variable in main when both are same variables.
+
