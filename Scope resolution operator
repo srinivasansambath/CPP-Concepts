@@ -29,3 +29,45 @@ OUTPUT:
 The value of global variable is 20
 //Function needed to be used to access the global variable in main when both are same variables.
 
+// In CPP
+#include <iostream>
+
+using namespace std;
+int x = 100;
+int main()
+{
+    int x = 30;
+    cout<<x;
+    return 0;
+}#include <iostream>
+
+using namespace std;
+int x = 100;
+int main()
+{
+    int x = 30;
+    cout<<x;
+    return 0;
+}
+
+OUTPUT:
+30
+
+//In CPP
+#include <iostream>
+
+using namespace std;
+int x = 100;
+int main()
+{
+    int x = 30;
+    cout<<x<<endl;
+    cout<<::x;
+    return 0;
+}
+OUTPUT:
+30
+100
+// We can use scope resolution operator for accessing global variables.
+No need of creating the functions like C language.
+
