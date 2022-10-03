@@ -21,3 +21,22 @@ OUTPUT:
 66
 B
 //This program depicts the usage of cout in CPP
+
+// Number system converstions in cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<035<<"\n"; //While giving simply , value is defaultly converted into decimal
+    cout<<0x41<<"\n";
+    cout<<hex<<035<<"\n"; //when given particular number system, converted to that
+    cout<<oct<<0x65;
+}
+
+OUTPUT:
+29
+65
+1d
+145
