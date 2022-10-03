@@ -40,3 +40,14 @@ OUTPUT:
 65
 1d
 145
+
+//It is number system conversion and not a datatype conversion. So if typecasting done as (hex) error will come
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<(hex)035;
+    cout<<(oct)0x41;
+}
