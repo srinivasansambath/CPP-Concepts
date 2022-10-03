@@ -51,3 +51,14 @@ int main()
     cout<<(hex)035;
     cout<<(oct)0x41;
 }
+// Any value to binary value conversion do not exist in CPP
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<bin<<23;
+}
+OUTPUT:
+Compilation error occurs bcz any value to binary value con do not exist
