@@ -110,3 +110,33 @@ OUTPUT:
 1
 1
 -11
+
+//Conditional operators in CPP
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    a=10? 2:3;
+    cout<<a<<endl;
+    a=cout<<10? 20:30 ;
+    cout<<"\n";
+    cout<<a<< endl;
+    a = cout<<0? 20:30;
+    cout<<"\n";
+    cout<<a;
+    cout<<10?20:30;
+    cout<<"\n";
+    cout<<(10?20:30);
+    //a=cout<<(10?20:30); Compilation error occurs because it is like applying an object to a directly
+    
+}
+OUTPUT:
+2
+10
+20
+0
+2010
+20
