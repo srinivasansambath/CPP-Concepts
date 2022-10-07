@@ -79,3 +79,34 @@ int main()
     //cout<<a>>b; // Error will occur
     return 0;
 }
+// Bitwise operators and logical operators in CPP
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 3;
+    int b = 2;
+    //cout<<a&b; // CE bcz it considers & as ref operator
+    cout<<(a&b);
+    cout<<endl;
+    cout<<a&&b;// here it considers upto a only.
+    cout<<endl;
+    cout<<b||a;// here it considers upto a only.
+    cout<<endl;
+    cout<< (a&&b);
+    cout<<endl;
+    cout<< (a||b);
+    cout<<"\n";
+    a = 10;
+    cout<<~a;
+    return 0;
+}
+OUTPUT:
+2
+3
+2
+1
+1
+-11
