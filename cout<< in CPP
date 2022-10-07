@@ -62,3 +62,20 @@ int main()
 }
 OUTPUT:
 Compilation error occurs bcz any value to binary value con do not exist
+
+// Relational operators in CPP
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 3;
+    int b = 2;
+    //cout<<a<<b; // It is not taking as left shift but prints as cout statements
+    cout<<(a<<b);
+    cout<<(a>b); 
+    //cout<<a>b; // Error will occur
+    //cout<<a>>b; // Error will occur
+    return 0;
+}
