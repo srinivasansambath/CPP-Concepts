@@ -1,0 +1,33 @@
+// Calling Functions with same name, same type of argument, same no. of arguments
+
+#include<iostream>
+using namespace std;
+
+void add(int a,int b);
+void add(int c, int d);
+int main()
+{
+    int a = 10, b = 20, x=30, y=40;
+    add(a,b);
+    add(x,y);
+}
+void add(int a,int b)
+{
+    int c;
+    c = a+b;
+}
+void add(int c, int d)
+{
+    int d;
+    d = x + y;
+}
+
+OUTPUT:
+Compilation Error.
+//The above program is not following method overloading.
+
+Compilation Error occurs because two calling functions are having same name, same no of arguments, same type of arguments.
+To overcome this,
+1) Change the function name,
+
+Without Changing name, we can use same function name multiple times, yes it is possible -> Method Overloading.
