@@ -1,0 +1,29 @@
+/* Reference variable is nothing but an alias name of another variable.
+Declaration and initialization of reference variable should be at the same time */
+
+
+// Swapping of two numbers using less memory allocation
+#include <iostream>
+
+using namespace std;
+void swapFunction(int &x, int &y);
+int main()
+{
+    int a = 100, b=200;
+    printf("Values before swapping are a= %d and b= %d",a,b);
+    swapFunction(a,b);
+    printf("\n");
+    printf("Values after swapping are a= %d and b= %d",a,b);
+    return 0;
+}
+void swapFunction(int &x, int &y)
+{
+    int z;
+    z = x;
+    x = y;
+    y = z;
+}
+OUTPUT:
+Values before swapping are a= 100 and b= 200
+Values after swapping are a= 200 and b= 100
+
