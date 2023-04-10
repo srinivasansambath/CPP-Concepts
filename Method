@@ -1,0 +1,31 @@
+//Reusing same function name with different no of arguments, with different type of arguments, with or without same return type 
+is called method overloading or function overloading.
+
+// Function overloading with different type of arguments
+#include <iostream>
+
+using namespace std;
+void fun(int a, int b);
+void fun(float a, float b);
+int main()
+{
+    int a = 10 , b = 20;
+    float x = 25.5, y = 30.0;
+    fun(a,b);
+    fun(x,y);
+    return 0;
+}
+void fun(int a, int b)
+{
+    cout<<a+b;
+    cout<<endl;
+}
+void fun(float a, float b)
+{
+    cout<<a+b;
+}
+
+OUTPUT:
+30
+55.5
+// When we want to use same function name with same type of arguments, we must use different no of arguments.
